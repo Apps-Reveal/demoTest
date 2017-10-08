@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: "#eae7ff",
         flex: 1,
-        paddingTop: 23
+        paddingTop: 23,
+        justifyContent: 'space-around', // 默认值：flex-start, 其他值：center, flex-end, space-between, space-around
     },
     item: {
         backgroundColor: '#fff',
