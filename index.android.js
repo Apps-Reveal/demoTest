@@ -4,27 +4,13 @@
  * @flow
  */
 
-/*
 import React, {Component} from 'react';
-
 import {
     AppRegistry,
     StyleSheet,
     Text,
     View
 } from 'react-native';
-
-*/
-
-import React, {Component} from 'react';
-import ReactNative from 'react-native';
-
-let {
-    AppRegistry,
-    StyleSheet,
-    Text,
-    View,
-} = ReactNative;
 
 export default class App extends Component {
     render() {
