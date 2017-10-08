@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: "#eae7ff",
         flex: 1,
+        flexDirection: 'row', // 默认值：column , 横向是：row
         // x轴的显示方式
         // alignItems: 'flex-end', // 默认值：flex-start， 其他值：center, flex-end
         // y轴的显示方式
@@ -53,7 +54,9 @@ const styles = StyleSheet.create({
     itemTwo: {
         // alignSelf:'center'
     },
-    itemThree: {},
+    itemThree: {
+        flex: 2
+    },
     itemText: {
         fontSize: 33,
         fontFamily: "Arial",
