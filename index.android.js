@@ -15,14 +15,19 @@ import {
 export default class App extends Component {
     render() {
         return (
-            <View style={{
-                backgroundColor:'red',
-                flex:1
-            }}>
-                <Text style={{color:"#fff"}}>Welcome to React Native!</Text>
+            <View style={styles.container}>
+                <Text style={{color: "#fff"}}>Welcome to React Native!</Text>
             </View>
         );
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: "pink",
+        flex: 1,
+    }
+});
+
 
 AppRegistry.registerComponent('App', () => App);
