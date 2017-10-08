@@ -16,7 +16,15 @@ export default class App extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.title}>Welcome to React Native!</Text>
+                <View style={[styles.item, styles.itemOne]}>
+                    <Text style={styles.itemText}>1</Text>
+                </View>
+                <View style={[styles.item, styles.itemTwo]}>
+                    <Text style={styles.itemText}>2</Text>
+                </View>
+                <View style={[styles.item, styles.itemThree]}>
+                    <Text style={styles.itemText}>3</Text>
+                </View>
             </View>
         );
     }
@@ -26,19 +34,23 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: "#eae7ff",
         flex: 1,
-        paddingTop: 130
+        paddingTop: 23
     },
-    title: {
-        fontSize: 26,
-        color: '#6435c9',
-        textAlign: 'center',
-        fontStyle: 'italic',
-        letterSpacing: 2,
-        lineHeight: 33,
-        fontFamily: 'Arial',
-        fontWeight: 'bold',
-        textDecorationLine: 'line-through', // underline, line-through
-        textDecorationStyle: 'solid' // double, solid, dotted, dashed
+    item: {
+        backgroundColor: '#fff',
+        borderWidth: 1,
+        borderColor: '#6435c9',
+        margin: 6,
+    },
+    itemOne: {},
+    itemTwo: {},
+    itemThree: {},
+    itemText: {
+        fontSize: 33,
+        fontFamily: "Arial",
+        fontWeight: '200',
+        color: "#6435c9",
+        padding: 30,
     }
 });
 
