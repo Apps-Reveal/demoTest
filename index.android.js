@@ -35,6 +35,9 @@ const styles = StyleSheet.create({
         backgroundColor: "#eae7ff",
         flex: 1,
         paddingTop: 23,
+        // x轴的显示方式
+        alignItems:'flex-end', // 默认值：flex-start， 其他值：center, flex-end
+        // y轴的显示方式
         justifyContent: 'space-around', // 默认值：flex-start, 其他值：center, flex-end, space-between, space-around
     },
     item: {
@@ -43,8 +46,13 @@ const styles = StyleSheet.create({
         borderColor: '#6435c9',
         margin: 6,
     },
-    itemOne: {},
-    itemTwo: {},
+    itemOne: {
+        // alignSelf 用于设置单项
+        alignSelf:'flex-start'
+    },
+    itemTwo: {
+        alignSelf:'center'
+    },
     itemThree: {},
     itemText: {
         fontSize: 33,
