@@ -1,3 +1,8 @@
 {
-  "presets": ["react-native"]
+  "presets": [
+    "react-native"
+  ],
+  "whitelist": [
+    "es6.modules"
+  ]
 }

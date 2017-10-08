@@ -8,5 +8,6 @@
 - $`npm i` 或 $`yarn install`
 
 ### 运行项目到手机
+- 连接手机后执行, $`adb devices` 显示已链接的手机
 - $`react-native run-android`
-
+- 
