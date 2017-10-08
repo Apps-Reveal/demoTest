@@ -16,7 +16,7 @@ export default class App extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Welcome to React Native!</Text>
+                {/*<Text>Welcome to React Native!</Text>*/}
             </View>
         );
     }
@@ -30,8 +30,11 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: "#6435c9",
         borderRadius: 16,
+        // 阴影颜色
         shadowColor: '#6435c9',
+        // 阴影不透明度 0 ~ 1
         shadowOpacity: 0.6,
+        // 阴影扩散程度
         shadowRadius: 2,
         shadowOffset: {
             height: 1,
