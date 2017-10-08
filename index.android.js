@@ -16,7 +16,7 @@ export default class App extends Component {
     render() {
         return (
             <View style={styles.container}>
-                {/*<Text>Welcome to React Native!</Text>*/}
+                <Text style={styles.title}>Welcome to React Native!</Text>
             </View>
         );
     }
@@ -26,22 +26,20 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: "#eae7ff",
         flex: 1,
-        margin: 30,
-        borderWidth: 1,
-        borderColor: "#6435c9",
-        borderRadius: 16,
-        // 阴影颜色
-        shadowColor: '#6435c9',
-        // 阴影不透明度 0 ~ 1
-        shadowOpacity: 0.6,
-        // 阴影扩散程度
-        shadowRadius: 2,
-        shadowOffset: {
-            height: 1,
-            width: 0
-        }
+        paddingTop: 130
+    },
+    title: {
+        fontSize: 26,
+        color: '#6435c9',
+        textAlign: 'center',
+        fontStyle: 'italic',
+        letterSpacing: 2,
+        lineHeight: 33,
+        fontFamily: 'Arial',
+        fontWeight: 'bold',
+        textDecorationLine: 'line-through', // underline, line-through
+        textDecorationStyle: 'solid' // double, solid, dotted, dashed
     }
 });
-
 
 AppRegistry.registerComponent('App', () => App);
