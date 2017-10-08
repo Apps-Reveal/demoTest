@@ -53,9 +53,10 @@ const styles = StyleSheet.create({
     },
     itemTwo: {
         // alignSelf:'center'
+        alignSelf:"flex-end"
     },
     itemThree: {
-        flex: 2
+        // flex: 2
     },
     itemText: {
         fontSize: 33,
