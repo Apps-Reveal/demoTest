@@ -6,13 +6,13 @@
 
 import React, {Component} from 'react';
 import {
-    AppRegistry,
     StyleSheet,
     Text,
     View
 } from 'react-native';
 
-export default class App extends Component {
+type Props = {};
+export default class App extends Component<Props> {
     render() {
         return (
             <View style={styles.container}>
@@ -66,5 +66,3 @@ const styles = StyleSheet.create({
         padding: 30,
     }
 });
-
-AppRegistry.registerComponent('App', () => App);
